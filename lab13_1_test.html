@@ -1,0 +1,248 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="13.css">
+        <script src="13_timer.js"></script>
+        <script src="13_test.js"></script>
+        <script>
+            function open_result(){
+                document.getElementById("countdown").style.display = "none";
+                document.getElementById("resultButton").style.display = "none";
+
+                document.getElementById("result_block").style.display = "block";
+                document.getElementById("againButton").style.display = "inline-block";
+
+                const res = result();
+                document.getElementById("testRes2").innerHTML = '<b>' + res + '%' + '</b>';
+
+                for(let i=0; i<document.getElementsByTagName("input").length; i++){
+                    document.getElementsByTagName("input")[i].disabled = "true";
+                }
+            }
+        </script>
+        <title>Тест ЛР-13</title>
+        <style type="text/css">
+            html{ margin:0;
+                 padding:0;
+                 width:100%;
+                 height:100%;
+            }
+            body {margin:0;
+                 background: url(p15.png); 
+                 background-size: cover;
+                 background-position: center;
+                 /* padding-bottom: 30% */
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <main>
+            <div class="timer">
+               
+                 <div id="countdown">
+                    <span>Время до окончания теста: </span>
+                    <span class="timerRes"><div id="minutes" class="minutes" ></span></div>
+                    <span>:</span>
+                    <span  class="timerRes"><div id="seconds" class="seconds"></span></div>
+                </div>
+           
+                <!-- <div class="countdown">
+                     <span id="minutes" class="minutes" ></span> minutes :
+                    <span id="seconds" class="seconds" ></span> seconds
+                  </div> -->
+
+                <div id="content" class="result">
+                    <span>Время вышло!</span>
+                    <br>
+                    <span>Результат: </span>
+                    <div id="testRes" class="testRes"></div>
+                   
+                </div> 
+
+                
+            </div>
+
+            <div id="test_l">
+
+                <!-- <p id="testname">
+                    Выберите один или несколько вариантов ответа:
+                </p>
+                <br> -->
+            
+                <form class="question" id="ques1">
+                    <div>
+                       Вопрос № 1. В фантастическом романе Евгения Замятина «Мы» герои не имеют имеют имен. Вместо этого им присвоены ...
+                    </div>
+                    <label class="answer">
+                        <input type="radio" name="q1">
+                        Прозвища
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="radio" name="q1">
+                        Фамилии
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="radio" name="q1">
+                        Номера
+                    </label>
+                </form>
+                 <br>
+                <!-- <div class="correctAnswer">
+                    Верный ответ: 2
+                </div> --> 
+                <form class="question"  id="ques2">
+                    <div>
+                        Вопрос № 2. Выберите произведения, которые написаны С.Д.Довлатовым
+                    </div>
+                    <label class="answer">
+                        <input type="checkbox" name="q2">
+                        "Остановка в пустыне"
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q2">
+                        "Заповедник"
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q2">
+                        "Записные Книжки"
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q2">
+                        " На ранних поездах"
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q2">
+                        "Чемодан"
+                    </label>
+                </form>
+                <br>
+                <div class="correctAnswer" id="answ2">
+                    Выбраны не все варианты ответа
+                </div>
+                <form class="question"  id="ques3">
+                    <!-- 8,9,12 -->
+                    <div>
+                        Вопрос № 3. Кто из перечисленных поэтов относится к Серебряному веку русской литературы ? 
+                    </div>
+                    <label class="answer">
+                        <input type="checkbox" name="q3">
+                        Ахматова Анна Андреевна 
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q3">
+                        Блок Александр Александрович
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q3">
+                        Фет Афанасий Афанасьевич
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q3">
+                        Лермонтов Михаил Юрьевич
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q3">
+                        Маяковский Владимир Владимирович
+                    </label>
+                </form>
+                <br>
+               <div class="correctAnswer" id="answ3">
+                    Выбраны не все варианты ответа
+                </div>
+                <form class="question"  id="ques4">
+                    <div>
+                        <!-- 13,14,15 -->
+                        Вопрос № 4. Выберите произведения, написанные в жанре комедии.
+                    </div>
+                    <label class="answer">
+                        <input type="checkbox" name="q4">
+                        "Горе от ума"
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q4">
+                        "Недоросль"
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q4">
+                        "Ревизор"
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q4">
+                        "Гранатовый браслет"
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q4">
+                        "Человек в футляре"
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q4">
+                        "Дубровский"
+                    </label>
+                </form>
+                <br>
+               <div class="correctAnswer" id="answ4">
+                    Выбраны не все варианты ответа
+                </div>
+                <form class="question"  id="ques5">
+                    <div>
+                        <!-- 19 -->
+                        Вопрос № 5. Выберите произведения в жанре "детектив"
+                    </div>
+                     <label class="answer">
+                        <input type="checkbox" name="q5">
+                        "Этюд в багровых тонах"
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q5">
+                        "Понедельник начинается в субботу"
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q5">
+                        "Таинственный остров"
+                    </label>
+                    <br>
+                    <label class="answer">
+                        <input type="checkbox" name="q5">
+                        "Собака Баскервилей"
+                    </label>
+                </form>
+                
+                <br>
+                <input id="resultButton" class="button_Res" value="Узнать результат" onClick="open_result()">
+                <br>
+                <form action="lab13_1_test.html" target="_self">
+                    <button id="againButton" class="button">Пройти тест заново</button>
+                </form>
+
+            </div>
+
+            <div id="result_block">
+                Результат:
+                <div id="testRes2"></div>
+            </div>
+
+        </main>
+
+    </body>
+
+</html>

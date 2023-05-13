@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="8.css">
+
+        <title>8</title>
+        <style>
+            html { height: 100%; } 
+            body {
+             margin: 0; /* Убираем отступы */
+             height: 100%; /* Высота страницы */
+             } 
+         </style>
+    </head>
+
+    <body background ="8_fon.gif" > 
+       
+
+        <header>
+        </header>
+
+        <main>
+            
+            <p>1. Основные технологии верстки сайтов</p>
+            <map name="Markup_language">
+                <area shape="rect" alt="HTML" title="HTML" coords="43,25,211,187" href="https://ru.wikipedia.org/wiki/HTML" target="_blank" >
+                <area shape="rect" alt="CSS" title="CSS" coords="243,25,411,187" href="https://ru.wikipedia.org/wiki/CSS" target="_blank" >
+                <area shape="rect" alt="JS" title="JS" coords="443,25,611,187" href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank" >
+              </map>
+              <img class="Markup_language" usemap="#Markup_language" src = "8_map1.png" alt="Markup language">
+
+
+            <br>
+            <p>2. Карта изображений из п. 3.1. Вариант 1</p> 
+            <br>
+            <map name="map2">
+             <area target="_blank" alt="Круг" title="Круг" href="https://ru.wikipedia.org/wiki/Круг" coords="127,86,44" shape="circle">
+              <area target="_blank" alt="Квадрат" title="Квадрат" 
+                    href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82" 
+                    coords="54,11,201,156" shape="rect">
+            </map>
+            <img id="p2" usemap="#map2" src="8_map2.png" alt="Картинка варианта" />
+            <br>
+            <br>
+            <p>3. Дубликат карты изображений из п. 1 </p> 
+            <div id="mapcss" style="position: absolute; left: 0px; top: 565px;">
+                <div class="fon"></div>
+                <div class="map1"><a href="https://ru.wikipedia.org/wiki/HTML"></a></div>
+                <div class="map2"><a href="https://ru.wikipedia.org/wiki/CSS"></a></div>
+                <div class="map3"><a href="https://ru.wikipedia.org/wiki/JS"></a></div>
+            </div>
+            
+            
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            <p>4. Gif-анимация</p> 
+            <div class="loader"></div>
+            <br>
+
+            <br><br><br><br>
+            <p>5. Звуковой файл</p> 
+            <audio controls="controls">
+                <source src="8_music.mp3" type="audio/mpeg">
+            </audio>
+
+            <br>
+            <p>6. Видеоролик</p>  
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6lT8it3eQls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+        </main>
+    </body>
+</html>

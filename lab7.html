@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <!-- <link href="styles.css" rel="stylesheet"> -->
+    <title>ЛР № 7</title>  
+    
+    <style>
+       html 
+       { height: 100%;  
+      }
+       body {
+        margin: 0; /* Убираем отступы */
+        height: 100%; /* Высота страницы */
+        background:url(7_fon.jpg);
+        background-size: cover; 
+        
+        } 
+    </style>
+    </head>
+  <!-- <body  background="f2.jpg" > -->
+    <body> 
+    <p style="font-size:30px; color: rgb(103, 3, 149); margin: auto auto 10px auto;">ЛР № 7. А-05-19 Абросимова Мария</p>
+    <p style="font-size:30px; color:rgb(253, 184, 56);margin: auto auto 10px auto;">Вариант № 1</p>
+
+    <div id="Layer1">
+      <img id=1 src="7_1.jpg" height = 40% width =  30%  style="position:absolute; z-index: 0; left: 0px; top: 100px;" onclick= "myFunction(id)"/>
+    </div>
+    <div id="Layer2">
+      <img id=2 src="7_2.jpg" height = 40% width =  30%  style="position:absolute; z-index: 1; left: 120px; top: 200px;" onclick= "myFunction(id)"/>
+    </div>
+    <div id="Layer3">
+      <img id=3 src="7_3.jpg" height = 40% width =  30%  style="position:absolute; z-index: 2; left: 240px; top:300px; " onclick= "myFunction(id)"/> 
+    </div>
+
+    <script>
+      function myFunction(id) {
+        // alert("id"+id);
+        let z_ind = Number(document.getElementById(id).style.zIndex);
+        z_ind += 1;
+        document.getElementById(id).style.zIndex = String (z_ind) ;
+        // alert("z-index: "+ document.getElementById(id).style.zIndex);
+      }
+    </script>
+    
+    <div style="position:relative;left: 45%; font-size:70px; top:10%; z-index:2; color: rgb(103, 3, 149)">Ханна Монтана</div>
+    <div style="position:relative;left: 47%; font-size:80px; top:0%; z-index:1; color:rgb(253, 184, 56); ">Майли Сайрус</div>
+
+</body>
+</html>

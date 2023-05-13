@@ -1,0 +1,73 @@
+#clock{
+    font-family:Tahoma, sans-serif;
+    font-size:20px;
+    font-weight:bold;
+    color:#ff1911;	
+  }
+/* 
+.calendar-wrapper {
+width: 360px;
+margin: 3em auto;
+padding: 2em;
+border: 1px solid #dcdcff;
+border-radius: 5px;
+background: #fff;
+} */
+
+table {
+clear: both;
+width: 100%;
+margin-left: 0;
+padding: 0;
+border:20px solid #1313e2;
+border-radius: 3px;
+border-collapse: collapse;
+color: #444;
+background-color: #d2d2d2;
+}
+td {
+height: 24px;
+text-align: center;
+vertical-align: left;
+border:20px solid #1313e2;
+border-right: 1px solid #fc8383;
+border-top: 1px solid #8383fc;
+width: 5px;
+}
+thead td {
+border: none;
+color: #d000ff;
+text-transform: uppercase;
+
+font-size: 1.5em;
+}
+
+td.today {
+font-weight: 700;
+color: #2600ff;
+font-weight: bold;
+/* font-size: 1.5em; */
+}
+
+
+/* .MovingBannerContainer
+
+{
+background-color: #FF0000;
+width: 900px;
+} */
+
+.MovingBanner
+{
+border-style: solid;
+border-width: medium;
+background-color:  #00fbff;
+color:#0061ac;
+width: 30%;
+line-height: 50px;
+vertical-align: bottom;
+text-align: center;
+position: relative;
+left: 0px;
+visibility:visible;
+}

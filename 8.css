@@ -1,0 +1,62 @@
+.loader {
+	width: 80px;
+	height: 80px;
+	border: 10px solid white;
+	border-radius: 80px;
+	border-top-color: dodgerblue;
+	border-bottom-color: crimson;
+	border-left-color: yellowgreen;
+	border-right-color: gold;
+	left: 10%;
+	top: 142%;
+	position:absolute; 
+	/* absolute */
+	transform: translate(-50%, -50%);
+	animation: 2s spin infinite linear;
+  }
+  @keyframes spin {
+	from {
+	  transform: translate(-50%, -50%) rotate(0deg);
+	}
+	to {
+	  transform: translate(-50%, -50%) rotate(360deg);
+	}
+  } 
+#container {
+    position: relative;
+}
+#mapcss div.map1 a {
+	display: block;
+	/* border: solid green; */
+	width: 167px;	/*размер активной области*/
+	height: 161px;	/*размер активной области*/
+	left: 43px;	/*координаты точки относительно картинки*/
+	top: 25px;
+	position: absolute;
+}
+#mapcss div.map2 a {
+	display: block;
+	/* border: solid green; */
+	width: 167px;	/*размер активной области*/
+	height: 161px;		/*размер активной области*/
+	left: 243px;	/*координаты точки относительно картинки*/
+	top: 25px;
+	position: absolute;
+}
+#mapcss div.map3 a {
+	display: block;
+	/* border: solid green; */
+	width: 167px;	/*размер активной области*/
+	height: 161px;	/*размер активной области*/
+	left: 443px;	/*координаты точки относительно картинки*/
+	top: 25px;
+	position: absolute;
+}
+
+#mapcss div.fon {
+	display:block;
+	background: url( "8_map1.png");
+	width:667px;
+	height: 216px;;
+	position: relative;
+}

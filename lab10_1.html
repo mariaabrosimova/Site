@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="10.css">
+
+        <title>10</title>
+        <style type="text/css">
+            body {margin:0;
+                 background: rgb(219, 176, 243); /* Цвет фона таблицы */
+                 padding:0;
+                 width:100%;
+            }
+        </style>
+        <script src="10_1.js"></script>
+
+        <!-- Reset CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <!-- Font Awesome CSS  -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />  
+        <!-- Calendar Style CSS -->
+        <link rel="stylesheet" href="scr/styles.css">
+    </head>
+    <body>
+        
+        <h1>Текущее время: </h1>
+        <div id='clock'></div> <br>
+
+        <!-- <div class="calendar-wrapper">
+            <button id="btnPrev" type="button">Предыдущий</button>
+            <button id="btnNext" type="button">Следующий</button> -->
+            
+        <div id="divCal"></div>
+        </div>
+
+    
+        <br>
+        <h1>Опрос</h1>
+        <br>
+<section class="main">
+ 
+<form name="quiz" action="javascript:check();" class="quizform">
+    <p> Выберите по одному варианту ответа в каждом вопросе:</p>
+<div id="testname" class="quizsection">
+    <h2>1. Есть преступления хуже, чем сжигать книги. Например — не читать их». Где можно найти такие строки?</h2>
+     
+    <div class="answer">
+        <input name="q1" value="value1" id="value1" type="radio" checked="checked" /> Джон Р. Р. Толкин, «Властелин колец» 
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value2" id="value2" type="radio" /> Рэй Брэдбери, «451 градус по Фаренгейту»
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value3" type="radio" /> Чарльз Диккенс, «Большие надежды»
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value4" type="radio" /> Джордж Оруэлл, «1984»
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value5" type="radio" /> Джейн Остин, «Гордость и предубеждение»
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value6" type="radio" /> Стивен Кинг, "Нужные вещи"
+    </div>
+ 
+</div>
+<br>
+<div class="quizsection">
+ 
+    <h2>2. К какому жанру принадлежит произведение А. С. Грибоедова «Горе от ума»?</h2>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value1" type="radio" checked="checked" /> Повесть
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value2" id="value2" type="radio" /> Комедия
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value3" type="radio" /> Поэма
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value4" type="radio" /> Роман
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value5" type="radio" /> Рассказ
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value6" type="radio" /> Басня
+    </div>
+ 
+</div>
+<br>
+<div class="quizsection">
+ 
+    <h2>3. Как зовут главную героиню рассказа Антона Павловича Чехова «Душечка»?</h2>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value1" type="radio" checked="checked" /> Елена
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value2" type="radio" /> Дашечка
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value2" id="value3" type="radio" /> Оленька
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value4" type="radio" /> Женечка
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value5" type="radio" /> Катерина
+    </div>
+ 
+    <div class="answer">
+        <input name="q3" value="value1" id="value6" type="radio" /> Татьяна
+    </div>
+<input value="Результат" type="submit" /> <input value="Сбросить" type="reset" />
+ </form> 
+
+</div>
+    <div id="MovingBanner" class="MovingBanner" style:left="0px" >Здесь могла быть ваша реклама </div>
+
+        <br>
+        <div class="preview"  onmouseover="showFull(this)" onmouseout="showShort(this)">
+
+            <div class="short" id="short">
+            
+                Реклама. Наведите курсором, чтобы узнать подробнее
+            
+            </div>
+            
+            <div class="full" id="full" hidden >
+            
+                Рекла́ма (от фр. réclame — букв. выкрикивать через нем. Reklame) — направление в маркетинговых коммуникациях, в рамках которого производится распространение информации для привлечения внимания к объекту рекламирования, с целью формирования или поддержания интереса к нему. «Узкое определение рекламы — платное однонаправленное и неличное обращение, осуществляемое через средства массовой информации и другие виды связи, агитирующее в пользу какого-либо товара, марки, фирмы, какого-либо предприятия, кандидата, правительства». Основные функции рекламы — повышение дохода от реализации продукта либо услуги. Правильно организованная кампания по раскрутке в течение длительного времени удерживает заинтересованность общества к товару. Помимо этого, происходит продвижение определённой торговой марки и привлечение новой аудитории.
+            
+            </div>
+            <br> <br>
+            </div>
+    
+ </body>

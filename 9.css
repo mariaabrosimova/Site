@@ -1,0 +1,34 @@
+    .foto{
+        background: url(9_1_1.jpg);
+        background-size: cover;
+        background-position: center;
+        /* Соотношение сторон 16:9 */
+        padding-bottom: 62.5%
+        }
+    .foto2{
+        background: url(9_2_2.jpg);
+        background-size: cover; 
+        background-position: center;
+        padding-bottom:   100% ;
+        }
+    .foto3{
+        background: url(10_1.jpg);
+        background-size: cover; 
+        background-position: center;
+        padding-bottom: 62.5%;
+        /* z-index: -1; */
+        }
+    .menu{
+        float:left;
+        width:20%;
+        height: 100%;
+        background-color: rgb(26, 93, 76); 
+        color:rgb(225, 212, 204); 
+        }
+    .mainContent {
+        float:left;
+        width:80%;
+        height:100%;
+        }
+
+  
